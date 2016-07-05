@@ -1,0 +1,6 @@
+framework module Pods_instant_recall {
+  umbrella header "Pods-instant-recall-umbrella.h"
+
+  export *
+  module * { export * }
+}

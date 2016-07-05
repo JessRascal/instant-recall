@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2543650C99DC3FC1759EE57C /* Pods_instant_recallUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB171A38C33FF29F9222DED /* Pods_instant_recallUITests.framework */; };
+		31F720270C140DECD2CCCA3A /* Pods_instant_recall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F04639103A3056982A6DA7A /* Pods_instant_recall.framework */; };
+		BE39FBFC96386F202D5531A6 /* Pods_instant_recallTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F164FE714EB17675CEAFCE12 /* Pods_instant_recallTests.framework */; };
+		C81B528D1D2BEBC300074D55 /* QuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B528C1D2BEBC300074D55 /* QuestionVC.swift */; };
+		C8D92CDB1D2B31A200ABF0A5 /* instant-recall-questions.json in Resources */ = {isa = PBXBuildFile; fileRef = C8D92CDA1D2B31A200ABF0A5 /* instant-recall-questions.json */; };
+		C8D92CE11D2B339700ABF0A5 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D92CE01D2B339700ABF0A5 /* DataService.swift */; };
+		C8D92CE41D2BA97D00ABF0A5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D92CE31D2BA97D00ABF0A5 /* Constants.swift */; };
+		C8D92CE61D2BAC5200ABF0A5 /* QuestionCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D92CE51D2BAC5200ABF0A5 /* QuestionCollection.swift */; };
+		C8D92CE81D2BCF5B00ABF0A5 /* TableSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D92CE71D2BCF5B00ABF0A5 /* TableSelectionVC.swift */; };
+		C8D92CEA1D2BD43900ABF0A5 /* TableOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D92CE91D2BD43900ABF0A5 /* TableOptionCell.swift */; };
 		C8E791E51D2ACE8000A02E03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E791E41D2ACE8000A02E03 /* AppDelegate.swift */; };
-		C8E791E71D2ACE8000A02E03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E791E61D2ACE8000A02E03 /* ViewController.swift */; };
+		C8E791E71D2ACE8000A02E03 /* MainMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E791E61D2ACE8000A02E03 /* MainMenuVC.swift */; };
 		C8E791EA1D2ACE8000A02E03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8E791E81D2ACE8000A02E03 /* Main.storyboard */; };
 		C8E791EC1D2ACE8000A02E03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8E791EB1D2ACE8000A02E03 /* Assets.xcassets */; };
 		C8E791EF1D2ACE8000A02E03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8E791ED1D2ACE8000A02E03 /* LaunchScreen.storyboard */; };
 		C8E791FA1D2ACE8000A02E03 /* instant_recallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E791F91D2ACE8000A02E03 /* instant_recallTests.swift */; };
 		C8E792051D2ACE8000A02E03 /* instant_recallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E792041D2ACE8000A02E03 /* instant_recallUITests.swift */; };
+		C8E792131D2AD09C00A02E03 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8E792121D2AD09C00A02E03 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +45,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B6FFFD8C56E7BC0FA020545 /* Pods-instant-recall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instant-recall.debug.xcconfig"; path = "Pods/Target Support Files/Pods-instant-recall/Pods-instant-recall.debug.xcconfig"; sourceTree = "<group>"; };
+		3C08C3092EF07CA25A9BDC86 /* Pods-instant-recallTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instant-recallTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-instant-recallTests/Pods-instant-recallTests.debug.xcconfig"; sourceTree = "<group>"; };
+		47AED7D5A7EFE71B4684E62E /* Pods-instant-recallUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instant-recallUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-instant-recallUITests/Pods-instant-recallUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6F04639103A3056982A6DA7A /* Pods_instant_recall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instant_recall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9760694764C0F3385605A054 /* Pods-instant-recallUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instant-recallUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-instant-recallUITests/Pods-instant-recallUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A53DC8F33551ADB456331D81 /* Pods-instant-recallTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instant-recallTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-instant-recallTests/Pods-instant-recallTests.release.xcconfig"; sourceTree = "<group>"; };
+		BEB171A38C33FF29F9222DED /* Pods_instant_recallUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instant_recallUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C81B528C1D2BEBC300074D55 /* QuestionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionVC.swift; sourceTree = "<group>"; };
+		C8D92CDA1D2B31A200ABF0A5 /* instant-recall-questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "instant-recall-questions.json"; sourceTree = "<group>"; };
+		C8D92CE01D2B339700ABF0A5 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		C8D92CE31D2BA97D00ABF0A5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C8D92CE51D2BAC5200ABF0A5 /* QuestionCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionCollection.swift; sourceTree = "<group>"; };
+		C8D92CE71D2BCF5B00ABF0A5 /* TableSelectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSelectionVC.swift; sourceTree = "<group>"; };
+		C8D92CE91D2BD43900ABF0A5 /* TableOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableOptionCell.swift; sourceTree = "<group>"; };
 		C8E791E11D2ACE8000A02E03 /* instant-recall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "instant-recall.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8E791E41D2ACE8000A02E03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C8E791E61D2ACE8000A02E03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C8E791E61D2ACE8000A02E03 /* MainMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuVC.swift; sourceTree = "<group>"; };
 		C8E791E91D2ACE8000A02E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C8E791EB1D2ACE8000A02E03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8E791EE1D2ACE8000A02E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +72,9 @@
 		C8E792001D2ACE8000A02E03 /* instant-recallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "instant-recallUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8E792041D2ACE8000A02E03 /* instant_recallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instant_recallUITests.swift; sourceTree = "<group>"; };
 		C8E792061D2ACE8000A02E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8E792121D2AD09C00A02E03 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D2FB5308F9C21CDCC1FF902D /* Pods-instant-recall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instant-recall.release.xcconfig"; path = "Pods/Target Support Files/Pods-instant-recall/Pods-instant-recall.release.xcconfig"; sourceTree = "<group>"; };
+		F164FE714EB17675CEAFCE12 /* Pods_instant_recallTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instant_recallTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31F720270C140DECD2CCCA3A /* Pods_instant_recall.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE39FBFC96386F202D5531A6 /* Pods_instant_recallTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +98,65 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2543650C99DC3FC1759EE57C /* Pods_instant_recallUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		222744A3ED72EB83AA73850F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F04639103A3056982A6DA7A /* Pods_instant_recall.framework */,
+				F164FE714EB17675CEAFCE12 /* Pods_instant_recallTests.framework */,
+				BEB171A38C33FF29F9222DED /* Pods_instant_recallUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8D92CDC1D2B337100ABF0A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C8D92CDD1D2B337600ABF0A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C8D92CE91D2BD43900ABF0A5 /* TableOptionCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C8D92CDE1D2B337E00ABF0A5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C8E791E61D2ACE8000A02E03 /* MainMenuVC.swift */,
+				C8D92CE71D2BCF5B00ABF0A5 /* TableSelectionVC.swift */,
+				C81B528C1D2BEBC300074D55 /* QuestionVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C8D92CDF1D2B338700ABF0A5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C8D92CE01D2B339700ABF0A5 /* DataService.swift */,
+				C8D92CE51D2BAC5200ABF0A5 /* QuestionCollection.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		C8D92CE21D2BA96700ABF0A5 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C8D92CE31D2BA97D00ABF0A5 /* Constants.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		C8E791D81D2ACE7F00A02E03 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +164,8 @@
 				C8E791F81D2ACE8000A02E03 /* instant-recallTests */,
 				C8E792031D2ACE8000A02E03 /* instant-recallUITests */,
 				C8E791E21D2ACE8000A02E03 /* Products */,
+				D9B204D5E98E2C04D428D497 /* Pods */,
+				222744A3ED72EB83AA73850F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +182,18 @@
 		C8E791E31D2ACE8000A02E03 /* instant-recall */ = {
 			isa = PBXGroup;
 			children = (
+				C8D92CE21D2BA96700ABF0A5 /* Util */,
+				C8D92CDF1D2B338700ABF0A5 /* Service */,
+				C8D92CDE1D2B337E00ABF0A5 /* Controller */,
+				C8D92CDD1D2B337600ABF0A5 /* View */,
+				C8D92CDC1D2B337100ABF0A5 /* Model */,
 				C8E791E41D2ACE8000A02E03 /* AppDelegate.swift */,
-				C8E791E61D2ACE8000A02E03 /* ViewController.swift */,
 				C8E791E81D2ACE8000A02E03 /* Main.storyboard */,
 				C8E791EB1D2ACE8000A02E03 /* Assets.xcassets */,
 				C8E791ED1D2ACE8000A02E03 /* LaunchScreen.storyboard */,
 				C8E791F01D2ACE8000A02E03 /* Info.plist */,
+				C8E792121D2AD09C00A02E03 /* GoogleService-Info.plist */,
+				C8D92CDA1D2B31A200ABF0A5 /* instant-recall-questions.json */,
 			);
 			path = "instant-recall";
 			sourceTree = "<group>";
@@ -125,6 +216,19 @@
 			path = "instant-recallUITests";
 			sourceTree = "<group>";
 		};
+		D9B204D5E98E2C04D428D497 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B6FFFD8C56E7BC0FA020545 /* Pods-instant-recall.debug.xcconfig */,
+				D2FB5308F9C21CDCC1FF902D /* Pods-instant-recall.release.xcconfig */,
+				3C08C3092EF07CA25A9BDC86 /* Pods-instant-recallTests.debug.xcconfig */,
+				A53DC8F33551ADB456331D81 /* Pods-instant-recallTests.release.xcconfig */,
+				9760694764C0F3385605A054 /* Pods-instant-recallUITests.debug.xcconfig */,
+				47AED7D5A7EFE71B4684E62E /* Pods-instant-recallUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8E792091D2ACE8000A02E03 /* Build configuration list for PBXNativeTarget "instant-recall" */;
 			buildPhases = (
+				F96D527C7457FB9E27D6A46C /* [CP] Check Pods Manifest.lock */,
 				C8E791DD1D2ACE7F00A02E03 /* Sources */,
 				C8E791DE1D2ACE7F00A02E03 /* Frameworks */,
 				C8E791DF1D2ACE7F00A02E03 /* Resources */,
+				3AB63F5F1968F761295042DA /* [CP] Embed Pods Frameworks */,
+				297EF0345E5BB7EB20D0C948 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +256,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8E7920C1D2ACE8000A02E03 /* Build configuration list for PBXNativeTarget "instant-recallTests" */;
 			buildPhases = (
+				E4F3E81A2FD084E99E35C737 /* [CP] Check Pods Manifest.lock */,
 				C8E791F11D2ACE8000A02E03 /* Sources */,
 				C8E791F21D2ACE8000A02E03 /* Frameworks */,
 				C8E791F31D2ACE8000A02E03 /* Resources */,
+				A8463F8BB057370B249CC1ED /* [CP] Embed Pods Frameworks */,
+				1B127B9AE69960C591DB8E22 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +277,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8E7920F1D2ACE8000A02E03 /* Build configuration list for PBXNativeTarget "instant-recallUITests" */;
 			buildPhases = (
+				5D6DB4B142A19EB706FDF2E1 /* [CP] Check Pods Manifest.lock */,
 				C8E791FC1D2ACE8000A02E03 /* Sources */,
 				C8E791FD1D2ACE8000A02E03 /* Frameworks */,
 				C8E791FE1D2ACE8000A02E03 /* Resources */,
+				B3F17F77812E0A919B6EBF32 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,6 +350,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8D92CDB1D2B31A200ABF0A5 /* instant-recall-questions.json in Resources */,
+				C8E792131D2AD09C00A02E03 /* GoogleService-Info.plist in Resources */,
 				C8E791EF1D2ACE8000A02E03 /* LaunchScreen.storyboard in Resources */,
 				C8E791EC1D2ACE8000A02E03 /* Assets.xcassets in Resources */,
 				C8E791EA1D2ACE8000A02E03 /* Main.storyboard in Resources */,
@@ -260,13 +374,142 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B127B9AE69960C591DB8E22 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-instant-recallTests/Pods-instant-recallTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		297EF0345E5BB7EB20D0C948 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-instant-recall/Pods-instant-recall-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AB63F5F1968F761295042DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-instant-recall/Pods-instant-recall-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D6DB4B142A19EB706FDF2E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A8463F8BB057370B249CC1ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-instant-recallTests/Pods-instant-recallTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3F17F77812E0A919B6EBF32 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-instant-recallUITests/Pods-instant-recallUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4F3E81A2FD084E99E35C737 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F96D527C7457FB9E27D6A46C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C8E791DD1D2ACE7F00A02E03 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8E791E71D2ACE8000A02E03 /* ViewController.swift in Sources */,
+				C8D92CE61D2BAC5200ABF0A5 /* QuestionCollection.swift in Sources */,
+				C8D92CEA1D2BD43900ABF0A5 /* TableOptionCell.swift in Sources */,
+				C8D92CE11D2B339700ABF0A5 /* DataService.swift in Sources */,
+				C8D92CE81D2BCF5B00ABF0A5 /* TableSelectionVC.swift in Sources */,
+				C81B528D1D2BEBC300074D55 /* QuestionVC.swift in Sources */,
+				C8E791E71D2ACE8000A02E03 /* MainMenuVC.swift in Sources */,
 				C8E791E51D2ACE8000A02E03 /* AppDelegate.swift in Sources */,
+				C8D92CE41D2BA97D00ABF0A5 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +655,7 @@
 		};
 		C8E7920A1D2ACE8000A02E03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B6FFFD8C56E7BC0FA020545 /* Pods-instant-recall.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "instant-recall/Info.plist";
@@ -424,6 +668,7 @@
 		};
 		C8E7920B1D2ACE8000A02E03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2FB5308F9C21CDCC1FF902D /* Pods-instant-recall.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "instant-recall/Info.plist";
@@ -436,6 +681,7 @@
 		};
 		C8E7920D1D2ACE8000A02E03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C08C3092EF07CA25A9BDC86 /* Pods-instant-recallTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "instant-recallTests/Info.plist";
@@ -449,6 +695,7 @@
 		};
 		C8E7920E1D2ACE8000A02E03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A53DC8F33551ADB456331D81 /* Pods-instant-recallTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "instant-recallTests/Info.plist";
@@ -462,6 +709,7 @@
 		};
 		C8E792101D2ACE8000A02E03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9760694764C0F3385605A054 /* Pods-instant-recallUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "instant-recallUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -474,6 +722,7 @@
 		};
 		C8E792111D2ACE8000A02E03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47AED7D5A7EFE71B4684E62E /* Pods-instant-recallUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "instant-recallUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -503,6 +752,7 @@
 				C8E7920B1D2ACE8000A02E03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C8E7920C1D2ACE8000A02E03 /* Build configuration list for PBXNativeTarget "instant-recallTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +761,7 @@
 				C8E7920E1D2ACE8000A02E03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C8E7920F1D2ACE8000A02E03 /* Build configuration list for PBXNativeTarget "instant-recallUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +770,7 @@
 				C8E792111D2ACE8000A02E03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
