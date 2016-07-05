@@ -13,10 +13,33 @@ class QuestionVC: UIViewController {
     @IBOutlet weak var factorLabel: UILabel!
     @IBOutlet weak var tableNumLabel: UILabel!
     
+    @IBOutlet var answerBtns: [UIButton]!
+    
+    
     var selectedTable = 0
+    var questionsWithAnswers = []
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Get the questions and answers for the selected table
+        questionsWithAnswers = QuestionCollection.questions[selectedTable]
+        print("Questions with answers: \(questionsWithAnswers)")
+        // Set the question labels
+        factorLabel.text = "\(questionsWithAnswers[0])"
         tableNumLabel.text = "\(selectedTable)"
+        
+        // Set the answer button labels
+        setAnswers()
+    }
+    
+    func setAnswers() {
+//        for answer in 1...questionsWithAnswers.count {
+        for btn in 0..<answerBtns.count {
+            let answer = btn + 1
+            answerBtns[btn].setTitle(String(questionsWithAnswers[answer]), for: [])
+//            print("\(answerBtns[answer].titleLabel)")
+        }
     }
     
     func checkAnswer() {

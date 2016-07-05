@@ -20,9 +20,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="vya-17-OWc" userLabel="primaryBtnSV">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="vya-17-OWc" userLabel="primaryBtnSV">
+                                <frame key="frameInset" minX="63" minY="274" width="250" height="121"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="StM-VZ-RBe" userLabel="trainingBtnSV">
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="StM-VZ-RBe" userLabel="trainingBtnSV">
+                                        <frame key="frameInset" width="100" height="121"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRo-zp-Oq8">
                                                 <color key="backgroundColor" red="1" green="0.59607843137254901" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -34,14 +36,16 @@
                                                     <action selector="trainingBtnTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="adD-TQ-YO5"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Training" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Os5-on-mR6">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Training" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Os5-on-mR6">
+                                                <frame key="frameInset" minY="100" width="100" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ojb-rV-tbE" userLabel="challengeBtnSV">
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ojb-rV-tbE" userLabel="challengeBtnSV">
+                                        <frame key="frameInset" minX="150" width="100" height="121"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NcO-ra-Cca">
                                                 <color key="backgroundColor" red="1" green="0.59607843140000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -50,7 +54,8 @@
                                                     <constraint firstAttribute="width" secondItem="NcO-ra-Cca" secondAttribute="height" multiplier="1:1" id="q3Q-bQ-3cH"/>
                                                 </constraints>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Challenge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feD-Sm-gPX">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Challenge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feD-Sm-gPX">
+                                                <frame key="frameInset" minY="100" width="100" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -93,7 +98,7 @@
                                         <frame key="frameInset" minY="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6vA-kH-gBI" id="d85-bZ-VrG">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Times Table" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7y4-vE-joI">
@@ -148,6 +153,11 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yp5-WL-A8m">
+                                        <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNI-LI-bU7">
                                         <fontDescription key="fontDescription" type="system" pointSize="112"/>
                                         <nil key="textColor"/>
@@ -155,9 +165,9 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="V2Y-cJ-CHe">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="V2Y-cJ-CHe" userLabel="answersSV">
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="YAf-M6-Y5l" userLabel="answerRowSV">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="YAf-M6-Y5l" userLabel="answerRow1SV">
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8U-oj-HQp">
                                                 <constraints>
@@ -185,7 +195,7 @@
                                             <constraint firstAttribute="height" constant="66" id="kD8-e1-19M"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="V74-sL-A1e" userLabel="answerRowSV">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="V74-sL-A1e" userLabel="answerRow2SV">
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXf-Sm-IyL">
                                                 <constraints>
@@ -213,7 +223,7 @@
                                             <constraint firstAttribute="height" constant="66" id="SSW-0T-ebu"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="mzs-hb-kXq" userLabel="answerRowSV">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="mzs-hb-kXq" userLabel="answerRow3SV">
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6A-Jb-7T5">
                                                 <constraints>
@@ -241,7 +251,7 @@
                                             <constraint firstAttribute="height" constant="66" id="ENE-LE-apu"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1sR-gr-sCI" userLabel="answerRowSV">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1sR-gr-sCI" userLabel="answerRow4SV">
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHM-44-vfD">
                                                 <constraints>
@@ -283,6 +293,18 @@
                     <connections>
                         <outlet property="factorLabel" destination="6dd-rW-AeZ" id="iWT-Wf-DbY"/>
                         <outlet property="tableNumLabel" destination="WNI-LI-bU7" id="9Oz-f1-O3k"/>
+                        <outletCollection property="answerBtns" destination="y8U-oj-HQp" collectionClass="NSMutableArray" id="JRm-MX-hb0"/>
+                        <outletCollection property="answerBtns" destination="VFR-e6-vgz" collectionClass="NSMutableArray" id="YMu-z3-Agv"/>
+                        <outletCollection property="answerBtns" destination="3mx-YY-Vkh" collectionClass="NSMutableArray" id="uJA-gD-W5D"/>
+                        <outletCollection property="answerBtns" destination="WXf-Sm-IyL" collectionClass="NSMutableArray" id="sgu-vV-5Wk"/>
+                        <outletCollection property="answerBtns" destination="Mkc-o7-dVV" collectionClass="NSMutableArray" id="dH2-oN-Arj"/>
+                        <outletCollection property="answerBtns" destination="iVk-vB-kXB" collectionClass="NSMutableArray" id="3Ks-H1-Ys0"/>
+                        <outletCollection property="answerBtns" destination="k6A-Jb-7T5" collectionClass="NSMutableArray" id="BPp-8q-9m7"/>
+                        <outletCollection property="answerBtns" destination="VvT-ZK-d0l" collectionClass="NSMutableArray" id="PaW-vh-mbQ"/>
+                        <outletCollection property="answerBtns" destination="JOF-VR-Q8Z" collectionClass="NSMutableArray" id="62r-A9-B4i"/>
+                        <outletCollection property="answerBtns" destination="gHM-44-vfD" collectionClass="NSMutableArray" id="b8A-w5-Xxu"/>
+                        <outletCollection property="answerBtns" destination="Fda-iH-oXg" collectionClass="NSMutableArray" id="8TR-rM-6dw"/>
+                        <outletCollection property="answerBtns" destination="sZS-5h-BsD" collectionClass="NSMutableArray" id="tvD-tF-zuS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N9t-3M-Vry" userLabel="First Responder" sceneMemberID="firstResponder"/>
