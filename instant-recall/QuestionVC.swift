@@ -16,55 +16,57 @@ class QuestionVC: UIViewController {
     @IBOutlet var answerBtns: [UIButton]!
     
     var selectedTable = 0
+    var questionSet: QuestionSet!
+    var answers = [Int]()
+    var factors = [Int]()
+    
     var currentFactor: Int = 0
     var currentAnswer: Int = 0
     var questionsAsked = 0
     
-    var answers = [Int]()
-    var factors = [Int]()
-    var shuffledAnswers = [Int]()
-    var shuffledFactors = [Int]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Set the table number label.
+        // Create a question set instance
+        questionSet = QuestionSet(selectedTable: selectedTable)
+        
+        // Set the table number label
         tableNumLabel.text = "\(selectedTable)"
         
-        // Create the question and answer set
-        createQuestionAndAnswerSet()
+        // Create the questions
+        createQuestions()
         
         // Set the current question and answer
         setCurrentQuestionAndAnswer(factor: questionsAsked)
     }
     
-    func createQuestionAndAnswerSet() {
-        // Set the factors and answers
-        for factor in 1...NUM_OF_TABLES {
-            factors.append(factor)
-            answers.append(selectedTable * factor)
-        }
+    func createQuestions() {
+        // Create the factors
+//        factors = questionSet.createFactors()
+        factors = questionSet.createValues()
         
-        // Shuffled the factors
-        shuffledFactors = factors.shuffle()
+        // Create the answers
+//        answers = questionSet.createAnswers()
+        answers = questionSet.createValues(answers: true)
     }
     
     func setAnswerOptions() {
         // Shuffle the answers before setting
-        shuffledAnswers = answers.shuffle()
-        print("Shuffled Answers: \(shuffledAnswers)") // Debugging
+        answers = answers.shuffle()
+        
         // Set the answer option button labels
         for i in 0..<answerBtns.count {
-            answerBtns[i].setTitle(String(shuffledAnswers[i]), for: [])
+            answerBtns[i].setTitle(String(answers[i]), for: [])
             answerBtns[i].isEnabled = true
         }
     }
     
     func setCurrentQuestionAndAnswer(factor: Int) {
+        // Increment the num questions asked
         questionsAsked += 1
         
         // Set the current factor
-        currentFactor = shuffledFactors[factor]
+        currentFactor = factors[factor]
         factorLabel.text = "\(currentFactor)"
         
         // Set the current answer
@@ -85,14 +87,14 @@ class QuestionVC: UIViewController {
             sender.isEnabled = false
             return
         }
-        guard questionsAsked < shuffledAnswers.count else {
+        guard questionsAsked < answers.count else {
             // No questions left
             
             // Display results/results screen
             // Using the same sscreen could allow the question
             // elements to be animated away and the
             // components to come in to play
-            print("Resutls should be displayed") // Debugging
+            print("Results should be displayed") // Debugging
             return
         }
         // Display the next question

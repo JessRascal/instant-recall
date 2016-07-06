@@ -12,6 +12,8 @@
 		BE39FBFC96386F202D5531A6 /* Pods_instant_recallTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F164FE714EB17675CEAFCE12 /* Pods_instant_recallTests.framework */; };
 		C8075D491D2D153B00ABACDB /* instant-recall-answers.json in Resources */ = {isa = PBXBuildFile; fileRef = C8075D481D2D153B00ABACDB /* instant-recall-answers.json */; };
 		C81B528D1D2BEBC300074D55 /* QuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B528C1D2BEBC300074D55 /* QuestionVC.swift */; };
+		C88C0B8F1D2D584500C6B9CE /* ResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88C0B8E1D2D584500C6B9CE /* ResultsVC.swift */; };
+		C88C0B911D2D618300C6B9CE /* QuestionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88C0B901D2D618300C6B9CE /* QuestionSet.swift */; };
 		C8D92CE11D2B339700ABF0A5 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D92CE01D2B339700ABF0A5 /* DataService.swift */; };
 		C8D92CE41D2BA97D00ABF0A5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D92CE31D2BA97D00ABF0A5 /* Constants.swift */; };
 		C8D92CE61D2BAC5200ABF0A5 /* QuestionCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D92CE51D2BAC5200ABF0A5 /* QuestionCollection.swift */; };
@@ -55,6 +57,8 @@
 		BEB171A38C33FF29F9222DED /* Pods_instant_recallUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instant_recallUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8075D481D2D153B00ABACDB /* instant-recall-answers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "instant-recall-answers.json"; sourceTree = "<group>"; };
 		C81B528C1D2BEBC300074D55 /* QuestionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionVC.swift; sourceTree = "<group>"; };
+		C88C0B8E1D2D584500C6B9CE /* ResultsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsVC.swift; sourceTree = "<group>"; };
+		C88C0B901D2D618300C6B9CE /* QuestionSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionSet.swift; sourceTree = "<group>"; };
 		C8D92CE01D2B339700ABF0A5 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		C8D92CE31D2BA97D00ABF0A5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C8D92CE51D2BAC5200ABF0A5 /* QuestionCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionCollection.swift; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 		C8D92CDC1D2B337100ABF0A5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C88C0B901D2D618300C6B9CE /* QuestionSet.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 				C8E791E61D2ACE8000A02E03 /* MainMenuVC.swift */,
 				C8D92CE71D2BCF5B00ABF0A5 /* TableSelectionVC.swift */,
 				C81B528C1D2BEBC300074D55 /* QuestionVC.swift */,
+				C88C0B8E1D2D584500C6B9CE /* ResultsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -508,10 +514,12 @@
 				C8F6103D1D2C9CE8006F4380 /* ArrayShuffle.swift in Sources */,
 				C8D92CE61D2BAC5200ABF0A5 /* QuestionCollection.swift in Sources */,
 				C8D92CEA1D2BD43900ABF0A5 /* TableOptionCell.swift in Sources */,
+				C88C0B8F1D2D584500C6B9CE /* ResultsVC.swift in Sources */,
 				C8D92CE11D2B339700ABF0A5 /* DataService.swift in Sources */,
 				C8D92CE81D2BCF5B00ABF0A5 /* TableSelectionVC.swift in Sources */,
 				C81B528D1D2BEBC300074D55 /* QuestionVC.swift in Sources */,
 				C8E791E71D2ACE8000A02E03 /* MainMenuVC.swift in Sources */,
+				C88C0B911D2D618300C6B9CE /* QuestionSet.swift in Sources */,
 				C8E791E51D2ACE8000A02E03 /* AppDelegate.swift in Sources */,
 				C8D92CE41D2BA97D00ABF0A5 /* Constants.swift in Sources */,
 			);
