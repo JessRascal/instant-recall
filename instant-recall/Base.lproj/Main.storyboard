@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="vya-17-OWc" userLabel="primaryBtnSV">
-                                <frame key="frameInset" minX="63" minY="274" width="250" height="121"/>
+                                <frame key="frameInset" minX="62" minY="184" width="250" height="121"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="StM-VZ-RBe" userLabel="trainingBtnSV">
                                         <frame key="frameInset" width="100" height="121"/>
@@ -98,7 +98,7 @@
                                         <frame key="frameInset" minY="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6vA-kH-gBI" id="d85-bZ-VrG">
-                                            <frame key="frameInset" width="375" height="44"/>
+                                            <frame key="frameInset" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Times Table" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7y4-vE-joI">
@@ -146,19 +146,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="XzI-k9-3PH" userLabel="questionSV">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="XzI-k9-3PH" userLabel="questionSV">
+                                <frame key="frameInset" minX="-85" minY="60" width="185" height="134"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dd-rW-AeZ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="x" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dd-rW-AeZ">
+                                        <frame key="frameInset" width="55" height="134"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="112"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yp5-WL-A8m">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yp5-WL-A8m">
+                                        <frame key="frameInset" minX="75" minY="34" width="36" height="67"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="56"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNI-LI-bU7">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="x" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNI-LI-bU7">
+                                        <frame key="frameInset" minX="131" width="55" height="134"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="112"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -175,6 +179,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="xxx"/>
+                                                <connections>
+                                                    <action selector="answerBtnTapped:" destination="1I0-Ll-hH2" eventType="touchUpInside" id="MPt-ku-n6J"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFR-e6-vgz">
                                                 <constraints>
@@ -182,6 +189,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="xxx"/>
+                                                <connections>
+                                                    <action selector="answerBtnTapped:" destination="1I0-Ll-hH2" eventType="touchUpInside" id="3cy-mq-kBB"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mx-YY-Vkh">
                                                 <constraints>
@@ -189,6 +199,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="xxx"/>
+                                                <connections>
+                                                    <action selector="answerBtnTapped:" destination="1I0-Ll-hH2" eventType="touchUpInside" id="Nfx-AI-73L"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -203,6 +216,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="xxx"/>
+                                                <connections>
+                                                    <action selector="answerBtnTapped:" destination="1I0-Ll-hH2" eventType="touchUpInside" id="bGA-zp-n3w"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mkc-o7-dVV">
                                                 <constraints>
@@ -210,6 +226,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="xxx"/>
+                                                <connections>
+                                                    <action selector="answerBtnTapped:" destination="1I0-Ll-hH2" eventType="touchUpInside" id="J8O-Tm-spE"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVk-vB-kXB">
                                                 <constraints>
@@ -217,6 +236,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="xxx"/>
+                                                <connections>
+                                                    <action selector="answerBtnTapped:" destination="1I0-Ll-hH2" eventType="touchUpInside" id="Xku-IU-223"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -231,6 +253,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="xxx"/>
+                                                <connections>
+                                                    <action selector="answerBtnTapped:" destination="1I0-Ll-hH2" eventType="touchUpInside" id="suc-wY-YrR"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VvT-ZK-d0l">
                                                 <constraints>
@@ -238,6 +263,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="xxx"/>
+                                                <connections>
+                                                    <action selector="answerBtnTapped:" destination="1I0-Ll-hH2" eventType="touchUpInside" id="Eeh-Bv-Bg2"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOF-VR-Q8Z">
                                                 <constraints>
@@ -245,6 +273,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="xxx"/>
+                                                <connections>
+                                                    <action selector="answerBtnTapped:" destination="1I0-Ll-hH2" eventType="touchUpInside" id="j02-3E-WLS"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -259,6 +290,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="xxx"/>
+                                                <connections>
+                                                    <action selector="answerBtnTapped:" destination="1I0-Ll-hH2" eventType="touchUpInside" id="yDT-b5-VrT"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fda-iH-oXg">
                                                 <constraints>
@@ -266,6 +300,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="xxx"/>
+                                                <connections>
+                                                    <action selector="answerBtnTapped:" destination="1I0-Ll-hH2" eventType="touchUpInside" id="UZs-1t-cqK"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZS-5h-BsD">
                                                 <constraints>
@@ -273,6 +310,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="xxx"/>
+                                                <connections>
+                                                    <action selector="answerBtnTapped:" destination="1I0-Ll-hH2" eventType="touchUpInside" id="h7s-YM-Ra1"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>

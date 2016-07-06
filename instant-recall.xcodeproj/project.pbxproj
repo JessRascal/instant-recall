@@ -25,6 +25,7 @@
 		C8E791FA1D2ACE8000A02E03 /* instant_recallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E791F91D2ACE8000A02E03 /* instant_recallTests.swift */; };
 		C8E792051D2ACE8000A02E03 /* instant_recallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E792041D2ACE8000A02E03 /* instant_recallUITests.swift */; };
 		C8E792131D2AD09C00A02E03 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8E792121D2AD09C00A02E03 /* GoogleService-Info.plist */; };
+		C8F6103D1D2C9CE8006F4380 /* ArrayShuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F6103C1D2C9CE8006F4380 /* ArrayShuffle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		C8E792041D2ACE8000A02E03 /* instant_recallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instant_recallUITests.swift; sourceTree = "<group>"; };
 		C8E792061D2ACE8000A02E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8E792121D2AD09C00A02E03 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C8F6103C1D2C9CE8006F4380 /* ArrayShuffle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayShuffle.swift; sourceTree = "<group>"; };
 		D2FB5308F9C21CDCC1FF902D /* Pods-instant-recall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instant-recall.release.xcconfig"; path = "Pods/Target Support Files/Pods-instant-recall/Pods-instant-recall.release.xcconfig"; sourceTree = "<group>"; };
 		F164FE714EB17675CEAFCE12 /* Pods_instant_recallTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instant_recallTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				C8D92CE31D2BA97D00ABF0A5 /* Constants.swift */,
+				C8F6103C1D2C9CE8006F4380 /* ArrayShuffle.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -502,6 +505,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8F6103D1D2C9CE8006F4380 /* ArrayShuffle.swift in Sources */,
 				C8D92CE61D2BAC5200ABF0A5 /* QuestionCollection.swift in Sources */,
 				C8D92CEA1D2BD43900ABF0A5 /* TableOptionCell.swift in Sources */,
 				C8D92CE11D2B339700ABF0A5 /* DataService.swift in Sources */,
