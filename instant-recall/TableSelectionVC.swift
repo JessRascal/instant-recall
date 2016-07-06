@@ -25,7 +25,7 @@ class TableSelectionVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     
     func getTableOptions() {
         // Get the different table options.
-        for table in 1..<QuestionCollection.questions.count {
+        for table in 1...NUM_OF_TABLES {
             tableOptions.append(table)
         }
         print("Tables: \(tableOptions)") // Debugging

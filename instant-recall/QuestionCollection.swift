@@ -9,5 +9,5 @@
 import Foundation
 
 class QuestionCollection {
-    static var questions = [[Int]]()
+    static var questions = [[Int]]() // NOT CURRENTLY USED
 }

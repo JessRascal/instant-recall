@@ -9,4 +9,4 @@
 import Foundation
 
 // Constants
-
+let NUM_OF_TABLES = 12

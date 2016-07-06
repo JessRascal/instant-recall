@@ -18,16 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         //Configure Firebase
-        FIRApp.configure()
+//        FIRApp.configure()
         
         // Enable disk persistence (offline data access)
 //        FIRDatabase.database().persistenceEnabled = true // NEEDED?
         
         // Get the question data from Firebase and observe changes
-        DataService.ds.REF_TABLES.observeSingleEvent(of: .value, with: { (snapshot) in
-            QuestionCollection.questions = snapshot.value as! [[Int]]
-                print("Questions \(QuestionCollection.questions)") // Debugging
-            })
+//        DataService.ds.REF_TABLES.observeSingleEvent(of: .value, with: { (snapshot) in
+//            QuestionCollection.questions = snapshot.value as! [[Int]]
+//                print("Questions \(QuestionCollection.questions)") // Debugging
+//            })
         
         return true
     }
