@@ -20,14 +20,18 @@ class QuestionVC: UIViewController {
     var currentAnswer: Int = 0
     var questionsAsked = 0
     
-    // [[<factor>, <answer>]]
-    var answers = [[1, 7], [2, 14], [3, 21], [4, 28], [5, 35], [6, 42], [7, 49], [8, 56], [9, 63], [10, 70], [11, 77], [12, 84]] // replace for Firebase data
+    var answers = [Int]()
     var factors = [Int]()
-    var shuffledAnswers = [[Int]]()
+    var shuffledAnswers = [Int]()
     var shuffledFactors = [Int]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Set the answers
+        answers = QuestionCollection.questions[selectedTable]
+        // Remove the '0' answer
+        answers.removeFirst()
         
         // Set the factors
         for factor in 1...answers.count {
@@ -36,16 +40,13 @@ class QuestionVC: UIViewController {
         
         // Shuffle questions
         shuffledFactors = factors.shuffle()
-        print("Shuffled Factors: \(shuffledFactors)") // Debugging
+//        print("Shuffled Factors: \(shuffledFactors)") // Debugging
         
         // Set the table number label.
         tableNumLabel.text = "\(selectedTable)"
         
         // Set the current question and answer
         setQuestionAndAnswer(factor: questionsAsked)
-        
-        // Set the answer option button labels
-        setAnswerOptions()
     }
     
     func setQuestionAndAnswer(factor: Int) {
@@ -68,8 +69,9 @@ class QuestionVC: UIViewController {
         // Shuffle the answers before setting
         shuffledAnswers = answers.shuffle()
 //        print("Shuffled Answers: \(shuffledAnswers)") // Debugging
+        // Set the answer option button labels
         for i in 0..<answerBtns.count {
-            answerBtns[i].setTitle(String(shuffledAnswers[i][1]), for: [])
+            answerBtns[i].setTitle(String(shuffledAnswers[i]), for: [])
             answerBtns[i].isEnabled = true
         }
     }

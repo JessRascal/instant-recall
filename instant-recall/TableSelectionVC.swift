@@ -31,7 +31,7 @@ class TableSelectionVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         print("Tables: \(tableOptions)") // Debugging
     }
     
-    // MARK: - TableView fucntions
+    // MARK: - TableView functions
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
