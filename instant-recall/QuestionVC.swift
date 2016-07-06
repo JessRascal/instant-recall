@@ -52,7 +52,7 @@ class QuestionVC: UIViewController {
     
     func setAnswerOptions() {
         // Shuffle the answers before setting
-        answers = answers.shuffle()
+//        answers = answers.shuffle() // Shuffle answers every time??
         
         // Set the answer option button labels
         for i in 0..<answerBtns.count {
@@ -95,9 +95,20 @@ class QuestionVC: UIViewController {
             // elements to be animated away and the
             // components to come in to play
             print("Results should be displayed") // Debugging
+            // Go to Results screen
+            performSegue(withIdentifier: "goToResults", sender: nil)
             return
         }
         // Display the next question
         setCurrentQuestionAndAnswer(factor: questionsAsked)
+    }
+    
+    // MARK: - Segue preparation
+    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "goToResults" {
+            if let resultsVC = segue.destinationViewController as? ResultsVC {
+                resultsVC.previousTable = selectedTable
+            }
+        }
     }
 }

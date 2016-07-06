@@ -15,28 +15,6 @@ class QuestionSet {
         table = selectedTable
     }
     
-    func createFactors() -> [Int] {
-        var factors = [Int]()
-        
-        for factor in 1...NUM_OF_TABLES {
-            factors.append(factor)
-        }
-        // Shuffle and return the factors
-        factors = factors.shuffle()
-        return factors
-    }
-    
-    func createAnswers() -> [Int] {
-        var answers = [Int]()
-        
-        for factor in 1...NUM_OF_TABLES {
-            answers.append(factor * table)
-        }
-        // Shuffle and return the factors
-        answers = answers.shuffle()
-        return answers
-    }
-    
     func createValues(answers: Bool? = nil) -> [Int] {
         var values = [Int]()
         
