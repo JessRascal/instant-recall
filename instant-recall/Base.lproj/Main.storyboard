@@ -59,20 +59,26 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3wo-Fz-PgT" customClass="HeaderView" customModule="instant_recall" customModuleProvider="target">
+                                <frame key="frameInset" width="375" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.24705882352941178" green="0.31764705882352939" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vya-17-OWc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Gq2-jf-r0i"/>
                             <constraint firstItem="vya-17-OWc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gEy-dR-0XO"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="header" destination="3wo-Fz-PgT" id="wJ4-vz-Af9"/>
                         <segue destination="Fhx-bf-JSJ" kind="show" identifier="goToTableSelection" id="or6-Cv-gmz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="222" y="143"/>
+            <point key="canvasLocation" x="221.59999999999999" y="142.57871064467767"/>
         </scene>
         <!--Table SelectionVC-->
         <scene sceneID="nyI-fd-LmF">
@@ -93,7 +99,7 @@
                                         <frame key="frameInset" minY="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6vA-kH-gBI" id="d85-bZ-VrG">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Times Table" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7y4-vE-joI">
@@ -293,7 +299,8 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="XzI-k9-3PH" userLabel="questionSV">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="XzI-k9-3PH" userLabel="questionSV">
+                                <frame key="frameInset" minX="95" minY="60" width="185" height="134"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dd-rW-AeZ">
                                         <fontDescription key="fontDescription" type="system" pointSize="112"/>

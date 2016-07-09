@@ -11,9 +11,10 @@ import Firebase
 
 class MainMenuVC: UIViewController {
 
+    @IBOutlet weak var header: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
     }
     
